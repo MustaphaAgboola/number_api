@@ -83,7 +83,7 @@ def process_number(input_number):
         }, 400
 
 # Original endpoint (keeping for backward compatibility)
-@app.route('/number/<input_number>')
+@app.route('/number/<int:input_number>')
 def number_properties(input_number):
     response, status_code = process_number(input_number)
     return jsonify(response), status_code
