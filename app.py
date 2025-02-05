@@ -59,6 +59,16 @@ def get_digit_sum(n):
 def process_number(input_number):
     try:
         number = int(input_number)
+        if number < 0:
+            return {
+            "number": number,
+            "is_prime": is_prime(number),
+            "is_perfect": is_perfect(number),
+            "properties": get_properties(number),
+            "digit_sum": get_digit_sum(number),
+            "fun_fact": get_fun_fact(number)
+            }, 200
+        
         return {
             "number": number,
             "is_prime": is_prime(number),
