@@ -11,7 +11,7 @@ mkdir -p /home/ubuntu/flask_app
 cd /home/ubuntu/flask_app
 
 # Clone your Flask app (Replace with your GitHub repo)
-git clone https://github.com/your-username/your-flask-repo.git .
+git clone https://github.com/MustaphaAgboola/number_api.git .
 
 
 # Install dependencies
