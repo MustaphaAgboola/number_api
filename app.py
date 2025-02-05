@@ -59,12 +59,6 @@ def get_digit_sum(n):
 def process_number(input_number):
     try:
         number = int(input_number)
-        if number < 0:
-            return {
-                "number": input_number,
-                "error": True,
-                "message": "Please provide a positive number"
-            }, 200
         
         return {
             "number": number,
